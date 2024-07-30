@@ -47,6 +47,10 @@ const filesConfig : esbuild.BuildOptions = {
     './src/**/index.ts',
     './src/**/index.scss',
   ],
+  supported: {
+    'import-attributes': true,
+    'nesting': true
+  },
   plugins: [
     sassPlugin()
   ],
