@@ -4,6 +4,7 @@ import * as esbuild from 'https://deno.land/x/esbuild@v0.20.2/mod.js';
 import { sassPlugin } from 'npm:esbuild-sass-plugin@2.16.1'
 import { green } from 'https://deno.land/std@0.211.0/fmt/colors.ts';
 import { parseArgs } from 'https://deno.land/std@0.211.0/cli/parse_args.ts';
+import denoJson from '../deno.json' with {type: 'json'}
 
 const args = parseArgs<{
   watch: boolean | undefined,
@@ -54,6 +55,7 @@ const filesConfig : esbuild.BuildOptions = {
   plugins: [
     sassPlugin()
   ],
+  alias: denoJson.imports
 }
 
 console.log('Build process started.');
