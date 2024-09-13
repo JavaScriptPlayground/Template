@@ -1,5 +1,5 @@
 # Template
-Template for Frontend development. Build a web page using [SolidJS](https://solidjs.org) and [Deno](https://deno.land).
+Template for Frontend development. Build a web page using [SolidJS](https://solid-js.org) and [Deno](https://deno.land).
 
 [![Run Linter](https://github.com/JavaScriptPlayground/Template/actions/workflows/lint.yml/badge.svg)](https://github.com/JavaScriptPlayground/Template/actions/workflows/lint.yml)
 [![Run Unit Tests](https://github.com/JavaScriptPlayground/Template/actions/workflows/test.yml/badge.svg)](https://github.com/JavaScriptPlayground/Template/actions/workflows/test.yml)
