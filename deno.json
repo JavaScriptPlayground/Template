@@ -4,18 +4,21 @@
     "build:watch": "deno run -A ./config/build.ts --watch",
     "build:dev": "deno run -A ./config/build.ts --develope",
     "build:dev:watch": "deno run -A ./config/build.ts --develope --watch",
-    "serve": "",
+    "serve": "deno run -A ./src/server/index.ts",
+    "serve:dev": "deno run -A ./src/server/index.ts --develope --port=8000",
     "lint": "deno lint",
     "test": "deno test -A --check --reload --doc --allow-none --junit-path=\"./reports/report.xml\""
   },
-  "exclude": [
-    "./dist/"
-  ],
-  "test": {
-    "include": [
-      "**/*.test.ts"
-    ]
+  "imports": {
+    "@solid-js": "https://esm.sh/solid-js@1.8.22",
+    "solid-js": "https://esm.sh/solid-js@1.8.22",
+    "@solid-js/h/jsx-runtime": "https://esm.sh/solid-js@1.8.22/h/jsx-runtime",
+    "@solid-js/h/jsx-runtime/types": "https://esm.sh/solid-js@1.8.22/h/jsx-runtime/types",
+    "@solid-js/web": "https://esm.sh/solid-js@1.8.22/web",
+    "@std/cli": "jsr:@std/cli@^1.0.6",
+    "@std/http": "jsr:@std/http@^1.0.6"
   },
+
   "compilerOptions": {
     "target": "es6",
     "module": "es6",
@@ -30,6 +33,16 @@
     ],
     "types": [
       "./config/types/scss.d.ts"
+    ],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
+  },
+  "exclude": [
+    "./dist/"
+  ],
+  "test": {
+    "include": [
+      "**/*.test.ts"
     ]
   },
   "lint": {
