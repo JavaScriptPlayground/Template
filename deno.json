@@ -13,7 +13,6 @@
     "@solid-js": "https://esm.sh/solid-js@1.8.22",
     "solid-js": "https://esm.sh/solid-js@1.8.22",
     "@solid-js/h/jsx-runtime": "https://esm.sh/solid-js@1.8.22/h/jsx-runtime",
-    "@solid-js/h/jsx-runtime/types": "https://esm.sh/solid-js@1.8.22/h/jsx-runtime/types",
     "@solid-js/web": "https://esm.sh/solid-js@1.8.22/web",
     "@std/cli": "jsr:@std/cli@^1.0.6",
     "@std/http": "jsr:@std/http@^1.0.6"
