@@ -278,7 +278,14 @@
     "https://deno.land/x/denoflate@1.2.1/pkg/denoflate.js": "b9f9ad9457d3f12f28b1fb35c555f57443427f74decb403113d67364e4f2caf4",
     "https://deno.land/x/denoflate@1.2.1/pkg/denoflate_bg.wasm.js": "d581956245407a2115a3d7e8d85a9641c032940a8e810acbd59ca86afd34d44d",
     "https://deno.land/x/esbuild@v0.20.2/mod.js": "67c608ee283233f5d0faa322b887356857c547a8e6a00981f798b2cd38e02436",
+    "https://esm.sh/solid-js@1.8.22/h/jsx-runtime": "7ed1f08f326a25ea401a302a005ba335ad645f143f312101701b7829ff761bd2",
     "https://esm.sh/solid-js@1.8.22/jsx-runtime": "c300e7f77639c3271a9c2da5cda1dea6586fd3b5d2ad1172b0260a83fe537624",
-    "https://esm.sh/stable/solid-js@1.8.22/denonext/jsx-runtime.js": "4e67c5679f8bf80aff2e07f6b58a14c429a939d0300aafe1ed4df3bc0eca24ca"
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/h.js": "81f876a89ecd9c60e787f586751ea9be5c666cab0913552cd3a89f501e0133de",
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/h/jsx-runtime.js": "ccdc0f1f59a65dfc99c8dee9c11da16ba6efb7b2a79e9a90d6e71082366d4039",
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/jsx-runtime.js": "4e67c5679f8bf80aff2e07f6b58a14c429a939d0300aafe1ed4df3bc0eca24ca",
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/solid-js.mjs": "4cd2354177e205a27a98777c993dd88769af4d823440f58ab2f2b9f313b410eb",
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/web.js": "04191035000f7e52a944717e8094b76fef6aee8216e39bb722a19e3ff895fd3c",
+    "https://esm.sh/v135/seroval-plugins@1.1.0/denonext/web.js": "c4f53137d16600468bd48d5847575b5d2f20db14cb1c3b773bc41acb1273e26e",
+    "https://esm.sh/v135/seroval@1.1.0/denonext/seroval.mjs": "ca7833350589a0a822d6b30770c92fc8fe605680d339746ecbe569c6cdcbf307"
   }
 }
