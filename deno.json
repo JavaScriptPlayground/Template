@@ -9,14 +9,7 @@
     "lint": "deno lint",
     "test": "deno test -A --check --reload --doc --allow-none --junit-path=\"./reports/report.xml\""
   },
-  "imports": {
-    "@solid-js": "https://esm.sh/solid-js@1.8.22",
-    "solid-js": "https://esm.sh/solid-js@1.8.22",
-    "@solid-js/h/jsx-runtime": "https://esm.sh/solid-js@1.8.22/h/jsx-runtime",
-    "@solid-js/web": "https://esm.sh/solid-js@1.8.22/web",
-    "@std/cli": "jsr:@std/cli@^1.0.6",
-    "@std/http": "jsr:@std/http@^1.0.6"
-  },
+  "importMap": "./config/import_map.json",
 
   "compilerOptions": {
     "target": "es6",
@@ -33,8 +26,8 @@
     "types": [
       "./config/types/scss.d.ts"
     ],
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js"
+    "jsx": "react-jsx",
+    "jsxImportSource": "https://esm.sh/solid-js@1.8.22"
   },
   "exclude": [
     "./dist/"
