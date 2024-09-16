@@ -10,7 +10,6 @@
     "test": "deno test -A --check --reload --doc --allow-none --junit-path=\"./reports/report.xml\""
   },
   "importMap": "./config/import_map.json",
-
   "compilerOptions": {
     "target": "es6",
     "module": "es6",
