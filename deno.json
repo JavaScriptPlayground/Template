@@ -27,7 +27,7 @@
       "./config/types/scss.d.ts"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "https://esm.sh/solid-js@1.8.22"
+    "jsxImportSource": "https://esm.sh/solid-js@1.8.22/h"
   },
   "exclude": [
     "./dist/"
