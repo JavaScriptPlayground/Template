@@ -1,11 +1,13 @@
 import { render } from "@solid-js/web";
-import { createSignal, type JSX } from "@solid-js";
+import { createEffect, createSignal, type JSX } from "@solid-js";
 
 function Counter() : JSX.Element {
   const [count, setCount] = createSignal(1);
-  const increment = () => setCount(count => count + 1);
+  function increment() : void {setCount(count => count + 1)};
 
-  console.log(count())
+  createEffect(() => {
+    console.log("Count has changed to:", count());
+  });
 
   return (
     <button type="button" onClick={increment}>
