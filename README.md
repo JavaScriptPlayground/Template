@@ -8,13 +8,14 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
 ## Overview
 
 - `.gitignore` Git ignore file.
-- `deno.jsonc` [Deno configuration](https://docs.deno.com/runtime/manual/getting_started/configuration_file) file. Only
+- `deno.json` [Deno configuration](https://docs.deno.com/runtime/manual/getting_started/configuration_file) file. Only
   change this if you know what you are doing.
-- `deno.lock` Lock file for all dependencies.
 - `LICENSE` License file.
 - `README.md` This file.
 - `.github` [GitHub configuration](https://www.freecodecamp.org/news/how-to-use-the-dot-github-repository/) directory.
 - `config` Project specific config files (not part of sourcecode).
+  - `deno.lock` Lock file for all dependencies.
+  - `import_map.json` [Import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) for all imports.
   - `build` Build configuration files.
     - `index.ts` Build configuration for [esbuild](https://esbuild.github.io). Only change this if you know what you are doing.
   - `types` Project type declarations.
