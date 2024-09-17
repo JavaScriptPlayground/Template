@@ -15,7 +15,8 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
 - `README.md` This file.
 - `.github` [GitHub configuration](https://www.freecodecamp.org/news/how-to-use-the-dot-github-repository/) directory.
 - `config` Project specific config files (not part of sourcecode).
-  - `build.ts` Build configuration for [esbuild](https://esbuild.github.io). Only change this if you know what you are doing.
+  - `build` Build configuration files.
+    - `index.ts` Build configuration for [esbuild](https://esbuild.github.io). Only change this if you know what you are doing.
   - `types` Project type declarations.
     - `...` Declaration.
 - `docs` Documentation for the page.
