@@ -14,4 +14,5 @@ function Counter() : JSX.Element {
   );
 }
 
+// deno-lint-ignore no-non-null-assertion no-undef
 render(() => <Counter />, document.getElementById("app")!);
