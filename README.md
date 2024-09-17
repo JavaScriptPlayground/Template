@@ -20,7 +20,8 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
     - `index.ts` Build configuration for [esbuild](https://esbuild.github.io). Only change this if you know what you are doing.
   - `types` Project type declarations.
     - `...` Declaration.
-- `docs` Documentation for the page.
+- `doc` Documentation for the page.
+  - `...` Doc.
 - `src` All sourcecode.
   - `client` Sourcecode for the client.
     - `index.html` Page itself.
