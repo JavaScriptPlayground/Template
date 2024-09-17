@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "build": "deno run -A ./config/build.ts",
-    "build:watch": "deno run -A ./config/build.ts --watch",
-    "build:dev": "deno run -A ./config/build.ts --develope",
-    "build:dev:watch": "deno run -A ./config/build.ts --develope --watch",
+    "build": "deno run -A ./config/build/index.ts",
+    "build:watch": "deno run -A ./config/build/index.ts --watch",
+    "build:dev": "deno run -A ./config/build/index.ts --develope",
+    "build:dev:watch": "deno run -A ./config/build/index.ts --develope --watch",
     "serve": "deno run -A ./src/server/index.ts",
     "serve:dev": "deno run -A ./src/server/index.ts --develope --port=8000",
     "lint": "deno lint",
