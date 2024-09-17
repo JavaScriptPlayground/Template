@@ -1,9 +1,10 @@
-// deno-lint-ignore-file no-external-import
 /// <reference lib="deno.ns" />
-import * as esbuild from 'https://deno.land/x/esbuild@v0.20.2/mod.js';
-import { sassPlugin } from 'npm:esbuild-sass-plugin@2.16.1'
-import { green } from 'https://deno.land/std@0.211.0/fmt/colors.ts';
-import { parseArgs } from 'https://deno.land/std@0.211.0/cli/parse_args.ts';
+import * as esbuild from '@esbuild';
+import { sassPlugin as esbuildPluginSass } from '@esbuild-plugin-sass';
+import { solidPlugin as esbuildPluginSolidJs } from '@esbuild-plugin-solid-js';
+import { green } from '@std/fmt/colors';
+import { parseArgs } from '@std/cli/parse-args';
+
 import importMap from './import_map.json' with {type: 'json'}
 
 const args = parseArgs<{
@@ -53,7 +54,8 @@ const filesConfig : esbuild.BuildOptions = {
     'nesting': true
   },
   plugins: [
-    sassPlugin()
+    esbuildPluginSass(),
+    esbuildPluginSolidJs({solid: {moduleName: '@solid-js/web'}})
   ],
   alias: importMap.imports,
 }
