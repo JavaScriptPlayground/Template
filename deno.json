@@ -9,6 +9,7 @@
     "lint": "deno lint",
     "test": "deno test -A --check --reload --doc --allow-none --junit-path=\"./reports/report.xml\""
   },
+  "lock": "./config/lock.json",
   "importMap": "./config/import_map.json",
   "compilerOptions": {
     "target": "es6",
