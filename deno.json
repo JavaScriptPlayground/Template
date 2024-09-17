@@ -18,6 +18,7 @@
       "es6",
       "dom",
       "dom.iterable",
+      "dom.asynciterable",
       "webworker",
       "webworker.importscripts",
       "webworker.iterable"
