@@ -56,3 +56,7 @@ Use `deno task <name_of_the_task>`:
 - `serve` *Not implemented yet (currently does nothing)*
 - `lint` Lint the sourcecode
 - `test` Test your sourcecode (all `.test.ts` file will be checked). A junit report gets generated to `./reports/report.xml`
+
+## License
+
+GPL Version 3.0 Copyright (C) 2024 Max
