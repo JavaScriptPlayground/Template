@@ -7,6 +7,6 @@
     "@solid-js/web": "https://esm.sh/solid-js@1.8.22/web",
     "@std/cli": "jsr:@std/cli@^1.0.6",
     "@std/http": "jsr:@std/http@^1.0.6",
-    "@std/fmt": "jsr:@std/fmt"
+    "@std/fmt": "jsr:@std/fmt@^1.0.2"
   }
 }

@@ -5,7 +5,7 @@ import { solidPlugin as esbuildPluginSolidJs } from '@esbuild-plugin-solid-js';
 import { green } from '@std/fmt/colors';
 import { parseArgs } from '@std/cli/parse-args';
 
-import importMap from './import_map.json' with {type: 'json'}
+import importMap from '../import_map.json' with {type: 'json'}
 
 const args = parseArgs<{
   watch: boolean | undefined,
