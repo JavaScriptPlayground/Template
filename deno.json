@@ -17,14 +17,8 @@
     "experimentalDecorators": true,
     "lib": [
       "esnext",
-      "esnext.asynciterable",
       "dom",
-      "dom.iterable",
-      "dom.asynciterable",
-      "webworker",
-      "webworker.importscripts",
-      "webworker.iterable",
-      "webworker.asynciterable"
+      "webworker"
     ],
     "types": [
       "./config/types/scss.d.ts"
