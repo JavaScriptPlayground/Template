@@ -4,7 +4,6 @@
     "@esbuild-plugin-sass": "npm:esbuild-sass-plugin",
     "@esbuild-plugin-solid-js": "npm:esbuild-plugin-solid",
     "@solid-js": "https://esm.sh/solid-js@1.8.22",
-    "solid-js": "https://esm.sh/solid-js@1.8.22",
     "@solid-js/web": "https://esm.sh/solid-js@1.8.22/web",
     "@std/cli": "jsr:@std/cli@^1.0.6",
     "@std/http": "jsr:@std/http@^1.0.6",
