@@ -38,6 +38,8 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
       - `...` Styles.
     - `...` A subpage as a folder containing the same folder structure as `client`. `...` can have any name. It is
       recommended to not start with a `_` as these directories are reserved for the page itself.
+  - `server` Sourcecode for the server.
+    - `...` Server files.
 - `test` Tests (no unit tests).
   - `e_to_e` End to End tests for the page.
 
