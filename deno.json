@@ -16,13 +16,15 @@
     "module": "es6",
     "experimentalDecorators": true,
     "lib": [
-      "es6",
+      "esnext",
+      "esnext.asynciterable",
       "dom",
       "dom.iterable",
       "dom.asynciterable",
       "webworker",
       "webworker.importscripts",
-      "webworker.iterable"
+      "webworker.iterable",
+      "webworker.asynciterable"
     ],
     "types": [
       "./config/types/scss.d.ts"
