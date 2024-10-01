@@ -3,7 +3,13 @@
   "packages": {
     "specifiers": {
       "jsr:@std/cli@^1.0.6": "jsr:@std/cli@1.0.6",
+      "jsr:@std/encoding@^1.0.5": "jsr:@std/encoding@1.0.5",
       "jsr:@std/fmt@^1.0.2": "jsr:@std/fmt@1.0.2",
+      "jsr:@std/http@^1.0.6": "jsr:@std/http@1.0.7",
+      "jsr:@std/media-types@^1.0.3": "jsr:@std/media-types@1.0.3",
+      "jsr:@std/net@^1.0.4": "jsr:@std/net@1.0.4",
+      "jsr:@std/path@^1.0.6": "jsr:@std/path@1.0.6",
+      "jsr:@std/streams@^1.0.6": "jsr:@std/streams@1.0.6",
       "npm:esbuild-plugin-solid": "npm:esbuild-plugin-solid@0.6.0_esbuild@0.23.1_solid-js@1.8.22__seroval@1.1.1_@babel+core@7.25.2",
       "npm:esbuild-sass-plugin": "npm:esbuild-sass-plugin@3.3.1_esbuild@0.23.1_sass-embedded@1.78.0",
       "npm:esbuild@^0.23.1": "npm:esbuild@0.23.1",
@@ -13,8 +19,35 @@
       "@std/cli@1.0.6": {
         "integrity": "d22d8b38c66c666d7ad1f2a66c5b122da1704f985d3c47f01129f05abb6c5d3d"
       },
+      "@std/encoding@1.0.5": {
+        "integrity": "ecf363d4fc25bd85bd915ff6733a7e79b67e0e7806334af15f4645c569fefc04"
+      },
       "@std/fmt@1.0.2": {
         "integrity": "87e9dfcdd3ca7c066e0c3c657c1f987c82888eb8103a3a3baa62684ffeb0f7a7"
+      },
+      "@std/http@1.0.7": {
+        "integrity": "9b904fc256678a5c9759f1a53a24a3fdcc59d83dc62099bb472683b6f819194c",
+        "dependencies": [
+          "jsr:@std/cli@^1.0.6",
+          "jsr:@std/encoding@^1.0.5",
+          "jsr:@std/fmt@^1.0.2",
+          "jsr:@std/media-types@^1.0.3",
+          "jsr:@std/net@^1.0.4",
+          "jsr:@std/path@^1.0.6",
+          "jsr:@std/streams@^1.0.6"
+        ]
+      },
+      "@std/media-types@1.0.3": {
+        "integrity": "b12d30a7852f7578f4d210622df713bbfd1cbdd9b4ec2eaf5c1845ab70bab159"
+      },
+      "@std/net@1.0.4": {
+        "integrity": "2f403b455ebbccf83d8a027d29c5a9e3a2452fea39bb2da7f2c04af09c8bc852"
+      },
+      "@std/path@1.0.6": {
+        "integrity": "ab2c55f902b380cf28e0eec501b4906e4c1960d13f00e11cfbcd21de15f18fed"
+      },
+      "@std/streams@1.0.6": {
+        "integrity": "022ed94e380d06b4d91c49eb70241b7289ab78b8c2b4c4bbb7eb265e4997c25c"
       }
     },
     "npm": {
@@ -894,5 +927,12 @@
       }
     }
   },
-  "remote": {}
+  "remote": {
+    "https://esm.sh/solid-js@1.8.22": "d5befe75bf3f301d696ed213fe4ebd8d7bab29062b0bc4fd35188fd5f9e6a08c",
+    "https://esm.sh/solid-js@1.8.22/web": "78f5e4624f0e7b308dae0ced17b53ef15e651ae1d6a9c83f2a960ecffd4342d2",
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/solid-js.mjs": "4cd2354177e205a27a98777c993dd88769af4d823440f58ab2f2b9f313b410eb",
+    "https://esm.sh/stable/solid-js@1.8.22/denonext/web.js": "04191035000f7e52a944717e8094b76fef6aee8216e39bb722a19e3ff895fd3c",
+    "https://esm.sh/v135/seroval-plugins@1.1.0/denonext/web.js": "c4f53137d16600468bd48d5847575b5d2f20db14cb1c3b773bc41acb1273e26e",
+    "https://esm.sh/v135/seroval@1.1.0/denonext/seroval.mjs": "ca7833350589a0a822d6b30770c92fc8fe605680d339746ecbe569c6cdcbf307"
+  }
 }
