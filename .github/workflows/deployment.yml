@@ -23,8 +23,8 @@ concurrency:
 jobs:   
   deploy:
     name: Deploy Pages
-    # github.repository_owner == ${{ format('{0}.github.io', github.event.repository.name) }}
-    if: ${{ github.repository_owner == format('{0}.github.io', github.event.repository.name) }}
+    # github.event.repository.name == format('{0}.github.io', github.repository_owner)
+    if: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) }}
     env:
       deno-version: v1.x
       page-root-directory: './dist/'
