@@ -13,8 +13,8 @@
   "lock": "./config/lock.json",
   "importMap": "./config/import_map.json",
   "compilerOptions": {
-    "target": "es6",
-    "module": "es6",
+    "target": "esnext",
+    "module": "esnext",
     "experimentalDecorators": true,
     "lib": [
       "esnext",
