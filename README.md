@@ -17,6 +17,7 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
   - `deno.lock` Lock file for all dependencies.
   - `import_map.json` [Import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) for all imports.
   - `build` Build configuration files.
+    - `copy_files_extension_filter.json` JSON array of extensions for files that should be copied to the dist folder.
     - `index.ts` Build configuration for [esbuild](https://esbuild.github.io). Only change this if you know what you are doing.
   - `types` Project type declarations.
     - `...` Declaration.
@@ -30,7 +31,7 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
       - `...` Assets.
     - `_components` Page components/elements.
       - `...` Components/Elements.
-    - `_scripts` Page scripts. This directory must have a index.ts file as entry point.
+    - `_app` Page entry point. This directory must have a index.tsx file as entry point.
       - `index.ts` Page script entry file.
       - `...` Scripts.
     - `_styles` Page styles. This directory must have a index.scss file as entry point.
@@ -54,7 +55,6 @@ Next you can build your app using [`deno task build`](#tasks).
 After that your app is ready to serve by using [`deno task serve`](#tasks).
 
 ### Tasks
-
 Use `deno task <name_of_the_task>`:
 
 - `build` Build the page. *(recommended)*
@@ -66,6 +66,11 @@ Use `deno task <name_of_the_task>`:
 - `serve:dev` Serve the build `dist` directory as the page root for development (with verbose logging and directory listing enabled).
 - `lint` Lint the sourcecode
 - `test` Test your sourcecode (all `.test.ts` file will be checked). A junit report gets generated to `./reports/report.xml`
+
+### GitHub Workflows
+- `deployment.yml` Deploys your current app to GitHub Pages if the name of your repository ends with `.github.io`. (Ex. `github.com/foo/foo.github.io`)
+- `lint.yml` Lints your sourcecode.
+- `test.yml` Runs all the unit tests.
 
 ## License
 
