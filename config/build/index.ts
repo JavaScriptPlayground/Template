@@ -6,6 +6,7 @@ import { green } from '@std/fmt/colors';
 import { parseArgs } from '@std/cli/parse-args';
 
 import importMap from '../import_map.json' with {type: 'json'}
+import filesToCopy from '../files_to_copy.json' with {type: 'json'}
 
 const args = parseArgs<{
   watch: boolean | undefined,
@@ -13,19 +14,21 @@ const args = parseArgs<{
   logLevel: esbuild.LogLevel
 }>(Deno.args);
 
+// convert array to esbuild copy loader object
+const loaders = filesToCopy.reduce((
+  previouseExtension,
+  extension
+) => ({
+  ...previouseExtension,
+  [extension]: 'copy' as esbuild.Loader
+}), {})
+
 const copyConfig : esbuild.BuildOptions = {
   allowOverwrite: true,
   logLevel: args.logLevel ?? 'info',
   color: true,
   outdir: './dist',
-  loader: {
-    '.html': 'copy',
-    '.svg': 'copy',
-    '.png': 'copy',
-    '.jpg': 'copy',
-    '.jpeg': 'copy',
-    '.ico': 'copy',
-  },
+  loader: loaders,
   entryPoints: [
     './src/**/index.html',
     './src/**/_assets/**'
