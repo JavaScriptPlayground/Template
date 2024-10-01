@@ -6,7 +6,7 @@ import { green } from '@std/fmt/colors';
 import { parseArgs } from '@std/cli/parse-args';
 
 import importMap from '../import_map.json' with {type: 'json'}
-import filesToCopy from '../copy_to_dist.json' with {type: 'json'}
+import filesToCopy from './copy_to_dist.json' with {type: 'json'}
 
 const args = parseArgs<{
   watch: boolean | undefined,
