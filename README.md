@@ -53,6 +53,7 @@ Use `deno task <name_of_the_task>`:
 - `build:watch` Build the page with active file watcher. *(recommended)*
 - `build:dev` Build the page for development (without optimization like minification).
 - `build:dev:watch` Build the page for development (without optimization like minification) with active file watcher.
+- `cache` Cache all dependencies.
 - `serve` Serve the build `dist` directory as the page root. *(recommended)*
 - `serve:dev` Serve the build `dist` directory as the page root for development (with verbose logging and directory listing enabled).
 - `lint` Lint the sourcecode
@@ -60,4 +61,4 @@ Use `deno task <name_of_the_task>`:
 
 ## License
 
-GPL Version 3.0 Copyright (C) 2024 Max
+[GPL Version 3.0 Copyright (C) 2024 Max](./LICENSE)
