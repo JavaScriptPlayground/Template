@@ -53,7 +53,8 @@ Use `deno task <name_of_the_task>`:
 - `build:watch` Build the page with active file watcher. *(recommended)*
 - `build:dev` Build the page for development (without optimization like minification).
 - `build:dev:watch` Build the page for development (without optimization like minification) with active file watcher.
-- `serve` *Not implemented yet (currently does nothing)*
+- `serve` Serve the build `dist` directory as the page root. *(recommended)*
+- `serve:dev` Serve the build `dist` directory as the page root for development (with verbose logging and directory listing enabled).
 - `lint` Lint the sourcecode
 - `test` Test your sourcecode (all `.test.ts` file will be checked). A junit report gets generated to `./reports/report.xml`
 
