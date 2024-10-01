@@ -23,6 +23,7 @@ concurrency:
 jobs:   
   deploy:
     name: Deploy Pages
+    # Deploy only to Github Pages if repository name ends with .github.io
     if: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) }}
     env:
       deno-version: v1.x
