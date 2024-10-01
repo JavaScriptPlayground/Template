@@ -23,6 +23,7 @@ concurrency:
 jobs:   
   deploy:
     name: Deploy Pages
+    # github.repository_owner == github.event.repository.name + .github.io
     if: false
     env:
       deno-version: v1.x
