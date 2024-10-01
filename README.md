@@ -45,6 +45,14 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
 
 ## Usage
 
+### Getting started
+Checkout the template and run initial [`deno task cache`](#tasks). This will cache all the necessary dependencies.
+If you still getting import errors, try reloading the "import registries cache".
+
+Next you can build your app using [`deno task build`](#tasks).
+
+After that your app is ready to serve by using [`deno task serve`](#tasks).
+
 ### Tasks
 
 Use `deno task <name_of_the_task>`:
