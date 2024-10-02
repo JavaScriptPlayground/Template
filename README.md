@@ -46,7 +46,8 @@ Template for Frontend development. Build a web page using [SolidJS](https://soli
 
 ## Usage
 
-> [!WARNING] There is currently an issue with the global variable `document`. [Link to issue.](https://github.com/denoland/deno_lint/issues/590)
+> [!WARNING]
+> There is currently an issue with the global variable `document`. [Link to issue.](https://github.com/denoland/deno_lint/issues/590)
 
 ### Getting started
 Checkout the template and run initial [`deno task cache`](#tasks). This will cache all the necessary dependencies.
